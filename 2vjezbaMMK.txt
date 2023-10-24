@@ -18,10 +18,19 @@
 
     list-style-type: none;
 }
-
+#zadatak2 h1{
+    color: pink;
+}
 #zadatak2 ul ul {
     font-family: 'Oswald', sans-serif;
 
+}
+    #zadatak2 ul li {
+    font-family: 'Oswald', sans-serif;
+        padding:10px;
+        background-color:lightyellow;
+        color: #43FEAE;
+        
 }
     .header {
   padding: 60px;
@@ -124,23 +133,22 @@
 </div>
 
 <h3>Dobrodošli na moju web stranicu za ORP i MMK</h3>
-    <a href="1vjezbammk.html">Prva</a>
 <section id="zadatak2">
-            <h1>Prilozi:</h1>
+            <h1>NAVIGACIJA</h1>
                 <ul>
                     <li>
                         MMK
                         <ul>
                             <li><a href="1vjezbammk.html">Prva vježba</a></li>
-                            <li><a href="2vjezbammk.html">Druga vježba</a></li>
+                            <li><a href="2vjezbaMMK.txt">Druga vježba</a></li>
                             <li>Svinjski naravni odrezak</li>
                         </ul>
                     </li>
                     <li>
                        ORIP
                         <ul>
-                            <li>Prva vježba</li>
-                            <li>Druga vježba</li>
+                            <li><a href="1vjezbammk.html">Prva vježba</a></li>
+                            <li><a href="1vjezbammk.html">Druga vježba</a></li>
                         </ul>
                     </li>
                     
