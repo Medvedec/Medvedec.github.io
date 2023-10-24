@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medvedec</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    .header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: #fce7f7;
+  font-size: 30px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #f151c9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body style="background-color:white;">
+    <div class="header">
+        <h1>Mateo Medvedec</h1>
+        <p>Multimedijske komunikacije</p> 
+      </div>
+<div class="navbar">
+  <a href="MMK">Home/a>
+  <a href="o_meni.html">O meni</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Dropdown
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Prva vježba</a>
+    <a href="#">Druga vježba</a>
+    <a href="#">Treća vježba</a>
+  </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">ORIP
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="ORIP-java/vjezbe/1.vj/">Prva vježba</a>
+      <a href="#">Druga vježba</a>
+      <a href="#">Treća vježba</a>
+    </div>
+    </div> 
+</div>
+
+<h3>Dobrodošli na moju web stranicu za ORP i MMK</h3>
+<p>Linkovi za <a href="zadatak1.html">PRVI</a>, <a href="zadatak2.html">DRUGI</a>, <a href="zadatak3.html">TREĆI</a>, <a href="zadatak4.html">ČETVRTI</a> zadatak.</p>
+<center><h1>Lorem, ipsum.</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolor officia 
+    tenetur dicta hic laborum expedita quibusdam laudantium fuga voluptate!</p>
+<p>Eaque, repellat totam laborum ex cumque dolor magni. Dicta odit veritatis 
+    in id quos aspernatur labore iste est reiciendis provident.</p>
+<p>Voluptatem repudiandae sint similique tempora dicta distinctio. 
+    Illum fugit, nisi error tempore obcaecati, suscipit dolor dicta architecto exercitationem sint deserunt?</p>
+</center>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
