@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Medvedec</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #zadatak2 > ul {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    width: 500px;
+    padding: 20px 0;
+
+    list-style-type: none;
+}
+
+#zadatak2 ul ul {
+    font-family: 'Oswald', sans-serif;
+
+}
+    .header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: #fce7f7;
+  font-size: 30px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #f151c9;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+</style>
+</head>
+<body style="background-color:white;">
+    <div class="header">
+        <h1>Mateo Medvedec</h1>
+        <p>Multimedijske komunikacije</p> 
+      </div>
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="o_meni.html">O meni</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">MMK
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown1">
+    <a href="1vjezbammk.html">Prva</a>
+    <a href="#">Druga vježba</a>
+    <a href="#">Treća vježba</a>
+  </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">ORIP
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown2">
+      <a href="1vjezbaORIP.html">Prva vježba</a>
+      <a href="#">Druga vježba</a>
+      <a href="#">Treća vježba</a>
+    </div>
+    </div> 
+</div>
+
+<h3>Dobrodošli na moju web stranicu za ORP i MMK</h3>
+    <a href="1vjezbammk.html">Prva</a>
+<section id="zadatak2">
+            <h1>Prilozi:</h1>
+                <ul>
+                    <li>
+                        MMK
+                        <ul>
+                            <li><a href="1vjezbammk.html">Prva vježba</a></li>
+                            <li><a href="2vjezbammk.html">Druga vježba</a></li>
+                            <li>Svinjski naravni odrezak</li>
+                        </ul>
+                    </li>
+                    <li>
+                       ORIP
+                        <ul>
+                            <li>Prva vježba</li>
+                            <li>Druga vježba</li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+        </section>
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+</body>
+</html>
