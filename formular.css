@@ -1,28 +1,34 @@
+.container {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+   }
 body {
     margin: 50px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 form {
-    width: 500px;
+    width: 1000px;
     padding: 20px;
-    background-color: #FF5F14;
-    border: 6px double #c24400;
+    background-color: #7dd4e4;
+    border: 6px double #c1eb5f;
     border-radius: 10px;
 }
 
 input, fieldset, select {
     font-size: 14px;
-    width: 97%;
+    width: 50%;
     padding: 15px;
     margin: 10px;
     background-color: rgba(255,255,255,.5);
-    border: 2px solid #c24400;
+    border: 3px solid #f1aad6;
     box-sizing: border-box;
 }
 
 input:focus {
-    background-color: #ffcf66;;
+    background-color: #44a77e;;
 }
 
 label {
@@ -43,11 +49,11 @@ input[type="submit"], input[type="reset"] {
     height: 50px;
     padding: 2px;
     margin-left: 10px;
-    box-shadow: 3px 3px 3px #c24400;
+    box-shadow: 3px 3px 3px #59a57f;
 }
 
 input[type="submit"]:hover, input[type="reset"]:hover {
-    box-shadow: 3px 5px 3px #802d00;
+    box-shadow: 3px 5px 3px #4e3368;
 }
 
 input[type="color"] {
