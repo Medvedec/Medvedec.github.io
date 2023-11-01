@@ -7,21 +7,18 @@
 </head>
 <body>
 
-    <form action="mailto:mateio.medvedec@gmail.com?subject=Naslov" method="post" enctype="text/plain" accept-charset="UTF-8" autocomplete="on">
-        <label for="ime">Ime</label>
-        <input type="text" name="ime" placeholder="Vaše ime..." autofocus required>
+    <form action="mailto:mateio.medvedec@gmail.com" method="post" enctype="text/plain" accept-charset="UTF-8" autocomplete="on">
+       <div class="container">
+        <div class="form"> <label for="ime">Ime</label>
+        <input type="text" id="ime" placeholder="Vaše ime..." autofocus required>
         <label for="prezime">Prezime</label>
-        <input type="text" name="prezime" placeholder="Vaše prezime..." required>
+        <input type="text" id="prezime" placeholder="Vaše prezime..." required>
         <label for="lozinka">Password</label>
-        <input type="password" name="lozinka" maxlength="10" required>
+        <input type="password" id="lozinka" maxlength="10" required>
         <label for="email">E-mail</label>
-        <input type="email" name="email" required>
-        <label for="web">Web adresa</label>
-        <input type="url" name="web" placeholder="grf.unizg.hr">
-        <label for="rodjendan">Datum rođenja</label>
-        <input type="date" name="rodjendan">
+        <input type="email" id="email" required>
         <label for="mobilni">Mobilni telefon</label>
-        <input type="number" name="mobilni">
+        <input type="number" id="mobilni">
 
         <fieldset>
             <legend>Spol</legend>
@@ -30,28 +27,31 @@
         </fieldset>
         
         <fieldset>
-            <legend>Obavezni kolegiji</legend>
-            <input type="radio" value="ORP" id="ORP" name="obvezni"><label for="ORP">ORP</label> 
-            <input type="radio" value="RF1" id="RF1" name="obvezni"><label for="RF1">RF1</label> 
-            <input type="radio" value="TF1" id="TF1" name="obvezni"><label for="TF1">ORP</label> 
-            <input type="radio" value="MK1" id="MK1" name="obvezni"><label for="MK1">ORP</label> 
+            <legend>Odaberite mjesta za tisak</legend>
+            <input type="radio" value="ORP" id="ORP" name="obvezni"><label for="ORP">Prednja strana majice</label> 
+            <input type="radio" value="RF1" id="RF1" name="obvezni"><label for="RF1">Straznja strana majice</label> 
+            <input type="radio" value="TF1" id="TF1" name="obvezni"><label for="TF1">Rukavi</label> 
+            <input type="radio" value="MK1" id="MK1" name="obvezni"><label for="MK1">Etikete i siveni detalji</label> 
         </fieldset>
 
-        <label for="izborni">Izaberite jedan izborni kolegij</label>
-        <select name="izborni">
-            <option>Kolegij 1</option>
-            <option>Kolegij 2</option>
-            <option>Kolegij 3</option>
-        </select>
-
-        <label for="boja">Odaberite najdražu boju</label>
+ 
+        <label for="boja">Odaberite glavnu boju printa</label>
         <input type="color" id="boja" name="boja">
-
-        <label for="poruka">Poruka</label>
+        <label for="boja">Odaberite sekundarnu boju printa</label>
+        <input type="color" id="boja" name="boja">
+        <label for="poruka">Ostavite prijedloge:</label>
         <input type="text" id="poruka" name="poruka">
 
         <input type="reset" value="Poništi">
         <input type="submit" value="Prihvati">
+    </div>
+    <div class="slika">
+        <center><h1>PRINT NA MAJICE</h1></center>
+        <p>Moje isprike ako otvaranje maila u drugom prozoru ne radi nakon submitanja ali ja razlog ne mogu pronaći i
+             cijeli dan radim samo ovu vježbu.</p>
+        <img src="slikaa.png" alt="My Image" width="500" height="500">
+    </div>
+</div>
     </form>
     
 </body>
