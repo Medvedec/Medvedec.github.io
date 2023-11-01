@@ -7,21 +7,21 @@
 </head>
 <body>
 
-    <form action="mailto:mateio.medvedec@gmail.com" method="post" enctype="text/plain" accept-charset="UTF-8" autocomplete="on">
+    <form action="mailto:mateio.medvedec@gmail.com?subject=Naslov" method="post" enctype="text/plain" accept-charset="UTF-8" autocomplete="on">
         <label for="ime">Ime</label>
-        <input type="text" id="ime" placeholder="Vaše ime..." autofocus required>
+        <input type="text" name="ime" placeholder="Vaše ime..." autofocus required>
         <label for="prezime">Prezime</label>
-        <input type="text" id="prezime" placeholder="Vaše prezime..." required>
+        <input type="text" name="prezime" placeholder="Vaše prezime..." required>
         <label for="lozinka">Password</label>
-        <input type="password" id="lozinka" maxlength="10" required>
+        <input type="password" name="lozinka" maxlength="10" required>
         <label for="email">E-mail</label>
-        <input type="email" id="email" required>
+        <input type="email" name="email" required>
         <label for="web">Web adresa</label>
-        <input type="url" id="web" placeholder="grf.unizg.hr">
+        <input type="url" name="web" placeholder="grf.unizg.hr">
         <label for="rodjendan">Datum rođenja</label>
-        <input type="date" id="rodjendan">
+        <input type="date" name="rodjendan">
         <label for="mobilni">Mobilni telefon</label>
-        <input type="number" id="mobilni">
+        <input type="number" name="mobilni">
 
         <fieldset>
             <legend>Spol</legend>
