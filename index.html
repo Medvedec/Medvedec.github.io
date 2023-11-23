@@ -44,11 +44,11 @@ iframe {
   align-self: center;
   top: 25px;
  background:radial-gradient(aquamarine,rgb(255, 127, 244));
-  width: 552px;
-  height: 414px;
+  width: 568px;
+  height: 383px;
   background-color: #1abc9c;
   border: 1px solid gray;
-  border-radius: 10px;}
+  border-radius: 1px;}
 
   #fora {
     margin: 30px 0;
@@ -326,11 +326,13 @@ font-family: 'Tilt Neon', sans-serif;
   </table></div>
 <div class="float-child">
   <div class="vjezba5">
-<center><a href="rudes-web.jpg" target="f1">Pronađi EasterEgg na slici</a></center>
+<center><a href="none" target="f1" >Pronađi EasterEgg na slici</a></center>
+
 <map name="mcdonalds">
-  <area shape="circle" coords="104,200, 30" href="https://mcdonalds.hr/" target="f1"> 
+  <area shape="circle" coords="104,200,30" href="mek.jpg" target="f1"> 
 </map>
-  <center><iframe name="f1" id="f1"></iframe></center>
+<center><img src="rudes-web.jpg" usemap="#mcdonalds"></center>
+  <center><iframe name="f1" id="f1" usemap="#mcdonalds"></iframe></center>
 </div>
 
 </div>
@@ -377,6 +379,10 @@ window.onclick = function(e) {
       myDropdown.classList.remove('show');
     }
   }
+}
+</script>
+</body>
+</html>
 }
 </script>
 </body>
