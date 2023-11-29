@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Medvedec</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,6 +54,17 @@ iframe {
   top: 25px;
   bottom: 100px;
  background:radial-gradient(aquamarine,rgb(255, 127, 244));
+  width: 568px;
+  height: 383px;
+  background-color: #1abc9c;
+  border: 1px solid gray;
+  border-radius: 1px;}
+  iframe f2{
+  position: relative;
+  align-self: center;
+  top: 25px;
+  bottom: 100px;
+ background:radial-gradient(rgb(255, 127, 244),aquamarine);
   width: 568px;
   height: 383px;
   background-color: #1abc9c;
@@ -163,7 +174,7 @@ font-size: 26px;
     font-family: 'Playpen Sans', cursive;
 font-family: 'Tilt Neon', sans-serif;
     border-radius: 25px;
-    width: 500px;
+    width: 50%;
     padding: 20px 0;
     background-color:#ffffff;
 }
@@ -336,13 +347,15 @@ font-family: 'Tilt Neon', sans-serif;
   </table></div>
 <div class="float-child">
   <div class="vjezba5">
-<center><a href="none" target="f1" >Pronađi EasterEgg na slici</a></center>
+<center><a href="empty" target="f1" >Pronađi EasterEgg na slici</a></center>
 
 <map name="mcdonalds">
   <area shape="circle" coords="104,200,30" href="mek.jpg" target="f1"> 
+  <area shape="circle" coords="380,149,30" href="lamp.jpg" target="f2"> 
 </map>
 <center><img src="rudes-web.jpg" usemap="#mcdonalds"></center>
   <center><iframe name="f1" id="f1" usemap="#mcdonalds"></iframe></center>
+  <center><iframe name="f2" id="f2" usemap="#mcdonalds"></iframe></center>
 </div>
 
 </div>
@@ -375,11 +388,11 @@ font-family: 'Tilt Neon', sans-serif;
                 </ul>
         </section>
        
-
-        </section>
         <div class="footer">
           <p>Mateo Medvedec - web MMk</p>
         </div>
+        </section>
+       
 <script>
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
