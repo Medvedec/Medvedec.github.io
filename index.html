@@ -12,6 +12,16 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  .vidd button{  background-color: slategray;
+  border: none;
+  color: rgb(255, 127, 244);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;}
   @media screen and (max-width: 1600px) and (min-width: 500px), (min-width: 2300px) {
   div.vjezba5 {
     font-size: 20px;
@@ -353,10 +363,46 @@ font-family: 'Tilt Neon', sans-serif;
       <td>Slike, div i gradijenti</td>
       <td>2 sata</td>
     </tr>
-  </table></div>
+  </table>
+  <div class="vidd" style="text-align:center"> 
+    <button onclick="playPause()"><i class="fa fa-play"></i> / <i class="fa fa-pause"></i></button> 
+    <button onclick="makeBig()">Povečaj</button>
+    <button onclick="makeSmall()">Smanji</button>
+    <button onclick="makeNormal()">Vrati</button>
+    <br><br>
+    <video id="video1" width="420">
+      <source src="VIDEO.mp4" type="video/mp4">
+      <source src="VIDEO.mp4" type="video/ogg">
+      Your browser does not support HTML video.
+    </video>
+  </div> 
+  
+  <script> 
+  var myVideo = document.getElementById("video1"); 
+  
+  function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } 
+  
+  function makeBig() { 
+      myVideo.width = 560; 
+  } 
+  
+  function makeSmall() { 
+      myVideo.width = 320; 
+  } 
+  
+  function makeNormal() { 
+      myVideo.width = 420; 
+  } 
+  </script> 
+  </div>
 <div class="float-child">
   <div class="vjezba5">
-<center><a href="empty" target="f1" id="LINK">Pronađi EasterEgg na slici (2 su)</a></center>
+<center><a href="empty" target="f1" id="LINK">Pronađi EasterEgg</a></center>
 <center><p>(Probaj resizeati stranicu !)</p></center>
 <map name="mcdonalds">
   <area shape="circle" coords="104,200,30" href="mek.jpg" target="f1"> 
@@ -398,7 +444,7 @@ font-family: 'Tilt Neon', sans-serif;
         </section>
        
         <div class="footer">
-          <p>Mateo Medvedec - web MMK</p>
+          <p>Mateo Medvedec - web MMk</p>
         </div>
         </section>
        
