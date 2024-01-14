@@ -1,143 +1,57 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Medvedec</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-    .header {
-  padding: 60px;
-  text-align: center;
-  background: #1abc9c;
-  color: #fce7f7;
-  font-size: 30px;
-}
-.navbar {
-  overflow: hidden;
-  background-color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            perspective: 800px; /* Set the perspective for 3D effect */
+        }
 
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
 
-.dropdown {
-  float: left;
-  overflow: hidden;
-}
+        .square {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            visibility: hidden;
+            transform-style: preserve-3d;
+            transform-origin: center;
+            animation: moveRotate 6s linear infinite; /* 6s duration for one complete rotation */
+            transition: visibility 0.5s;
+        }
 
-.dropdown .dropbtn {
-  cursor: pointer;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
+        .square:nth-child(1) { transform: translateZ(0); }
+        .square:nth-child(2) { transform: translateZ(50px); }
+        .square:nth-child(3) { transform: translateZ(100px); }
+        .square:nth-child(4) { transform: translateZ(150px); }
 
-.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-  background-color: #f151c9;
-}
+        @keyframes moveRotate {
+            0% { transform: translateX(0) rotateY(0); }
+            25% { transform: translateX(100vw) rotateY(90deg); }
+            50% { transform: translateX(100vw) translateY(100vh) rotateY(180deg); }
+            75% { transform: translateX(0) translateY(100vh) rotateY(270deg); }
+            100% { transform: translateX(0) rotateY(360deg); }
+        }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.show {
-  display: block;
-}
-</style>
+        .container:hover .square {
+            visibility: visible;
+        }
+    </style>
 </head>
-<body style="background-color:white;">
-    <div class="header">
-        <h1>Mateo Medvedec</h1>
-        <p>Multimedijske komunikacije</p> 
-      </div>
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">O meni</a>
-  <div class="dropdown">
-  <button class="dropbtn" onclick="myFunction()">Dropdown
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-content" id="myDropdown">
-    <a href="#">Prva vježba</a>
-    <a href="#">Druga vježba</a>
-    <a href="#">Treća vježba</a>
-  </div>
-  </div> 
-</div>
-
-<h3>Dobrodošli na moju web stranicu za ORP i MMK</h3>
-<p>Ovdje ću objavljivati sve vježbe i projekte vezane sa HMTL, CSS i JavaScript-om. </p>
-<h1 style="color: red;">STRANICA U DORADI!</h1>
-<div class="container mt-5">
-    <div class="row">
-      <div class="col-sm-4">
-       <center> <h3>Košarka</h3>
-        <video width="380" height="650" controls>
-    <source src="basket.mp4" type="video/mp4">
-    <source src="basket.ogg" type="video/ogg">
-    Your browser does not support the video tag.
-    </video>
-        <center><p>Lagano zakucavanje</p>
-      </div>
-      <div class="col-sm-4">
-        <center><h3>Sviranje</h3>
-        <img src="gitara.jpg" style="width:400px;height:400px;"/><br>
-        <center><p>Ja dok sviram gitaru 2021.</p>
-      </div>
-      <div class="col-sm-4">
-        <center><h3>Slikanje</h3>
-        <img src="slikanje.jpg" style="width:400px;height:400px;"/>
-        <p>Slika na platnu</p>
-      </div>
+<body>
+    <div class="container">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
     </div>
-  </div>
-<script>
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(e) {
-  if (!e.target.matches('.dropbtn')) {
-  var myDropdown = document.getElementById("myDropdown");
-    if (myDropdown.classList.contains('show')) {
-      myDropdown.classList.remove('show');
-    }
-  }
-}
-</script>
 </body>
 </html>
